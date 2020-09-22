@@ -1,0 +1,291 @@
+@import url("https://fonts.googleapis.com/css2?family=Federo&family=Kotta+One&family=Marko+One&display=swap");
+
+body {
+	margin: 0;
+	font-family: "Federo", sans-serif;
+}
+
+.prime-title {
+	font-family: "Marko One", serif;
+}
+
+.subtitle {
+	font-family: "Kotta One", serif;
+}
+
+main {
+	margin-top: 60px;
+}
+
+nav {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	height: 60px;
+	padding: 0 20px;
+	border-bottom: 1px solid #ccc;
+	background-color: #fffffff2;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+.nav-links ul li {
+	list-style: none;
+}
+
+.nav-links ul {
+	padding: 0;
+	margin: 0;
+}
+
+li.nav-link-item {
+	cursor: pointer;
+	padding: 20px 0;
+	text-align: center;
+}
+
+li.nav-link-item.active,
+li.nav-link-item:hover,
+li.nav-link-item:active {
+	background-color: #ddd;
+}
+
+.nav-links {
+	position: absolute;
+	top: 60px;
+	left: 0;
+	right: 0;
+	padding: 20px 0;
+	background-color: #fffffff2;
+	border: 1px solid #ccc;
+}
+
+.nav-links.show {
+	z-index: 2;
+	transform: translateX(0);
+	transition: transform 0.5s;
+}
+
+.nav-links.hide {
+	transform: translateX(-100%);
+	transition: transform 0.5s;
+}
+
+#hamburger-icon div {
+	width: 30px;
+	height: 3px;
+	background-color: #797979;
+	margin-bottom: 4px;
+}
+
+#hamburger-icon:active div {
+	background-color: #404040;
+}
+
+#hamburger-icon {
+	height: 20px;
+	width: 20px;
+	margin-right: 50px;
+	background-color: white;
+}
+
+.nav-title {
+	display: flex;
+	align-items: center;
+}
+
+.jumbotron div {
+	text-align: center;
+	margin: 0 auto;
+}
+
+#avatar {
+	width: calc(200px + 2vw);
+	margin-top: 40px;
+}
+
+.jumbotron {
+	padding: 50px 0 70px 0;
+	background-color: #ebe9e9;
+}
+
+section {
+	text-align: center;
+	margin: 170px 0 50px 0;
+	padding: 0 30px;
+}
+
+section h2 {
+	margin-bottom: 30px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #bbb;
+}
+
+.works {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.works-item img {
+	height: 150px;
+}
+
+.works-item {
+	width: 300px;
+	margin: 15px 10px 70px 10px;
+	border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.works-item-desc p {
+	margin-top: 0;
+	margin-bottom: 26px;
+}
+
+.works-item-desc h3 {
+	margin-bottom: 10px;
+}
+
+.button-group {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.button-group a {
+	background-color: #ddd;
+	padding: 7px 25px;
+	border-radius: 7px;
+	border: 1px solid #ccc;
+	margin: 6px;
+	color: black;
+}
+
+.button-group a:active,
+.button-group a:hover {
+    background-color: #ccc;
+}
+
+.button-group a.white {
+	background-color: white;
+}
+
+button#getintouch {
+    padding: 15px 36px;
+    font-size: 20px;
+    background-color: #87c2ff9e;
+    border: 1px solid #82baf5;
+    border-radius: 28px;
+    outline: none;
+	cursor: pointer;
+}
+
+button#getintouch:hover,
+button#getintouch:active {
+    outline: none;
+    background-color: #82baf5;
+}
+
+#about p {
+    width: calc(150px + 30vw);
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+.contact-item {
+    margin: 30px 0;
+}
+
+.contact-item p {
+    font-weight: bold;
+}
+
+.contact-item a {
+    text-decoration: none;
+    color: #6d360e;
+}
+
+.contact-item a:hover {
+    text-decoration: underline;
+}
+
+.contact-items.hide {
+	opacity: 0;
+    transform: translateY(-50px);
+	transition: transform 0.3s, opacity 0.3s;
+}
+
+.contact-items.show {
+	position: relative;
+	z-index: -1;
+	opacity: 1;
+    transform: translateY(10px);
+	transition: transform 0.3s, opacity 0.3s;
+}
+
+.contents {
+	display: contents;
+}
+
+.hidden {
+	visibility: hidden;
+}
+
+.fa-linkedin {
+    padding: 2px 3px;
+    background-color: #2867B2;
+    color: white;
+    font-size: 15px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0 15px 0;
+    color: #3c3c3c;
+    background-color: #80808052;
+}
+
+@media (min-width: 650px) {
+	main {
+		margin-top: 80px;
+	}
+
+	.nav-links {
+		position: relative;
+		top: 0px;
+		padding: 0;
+		background-color: transparent;
+		border: none;
+	}
+
+	.nav-links.hide {
+		transform: none;
+	}
+
+	.nav-links ul {
+		display: flex;
+	}
+
+	li.nav-link-item {
+		padding: 20px;
+	}
+
+	nav {
+		padding: 10px 40px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	#hamburger-icon {
+		display: none;
+	}
+}
