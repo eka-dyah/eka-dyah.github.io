@@ -63,3 +63,20 @@ const contactContent = document.getElementById("contact");
 contactNav.addEventListener("click", () => {
 	window.scrollTo(0, contactContent.offsetTop - 120);
 });
+
+const worksHtml = document.getElementsByClassName("works")[0];
+const worksListHtml = listApp.map((work) => {
+    return `
+        <div class="works-item">
+            <img src="${work.img}">
+            <div class="works-item-desc">
+                <h3 class="title">${work.name}</h3>
+                <p>Tech: ${work.tech}</p>
+            </div>
+            <div class="button-group">
+                <a role="button" href="${work.github}" target="_blank">Github</a>
+                <a role="button" href="${work.linkApp}" target="_blank">App</a>
+            </div>
+        </div>`;
+});
+worksHtml.innerHTML = worksListHtml;
