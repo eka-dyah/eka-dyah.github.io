@@ -1,5 +1,12 @@
 const listApp =[
     {
+        "name": "Memory Game",
+        "tech": "Javascript, React JS, CSS",
+        "github": "https://github.com/eka-dyah/memory-game",
+        "linkApp": "https://gameofmemory.web.app",
+        "img": "./assets/img/memgame.jpg"
+    },
+    {
         "name": "Space Torm",
         "tech": "Javascript, React JS, CSS",
         "github": "https://github.com/eka-dyah/space-torm",
