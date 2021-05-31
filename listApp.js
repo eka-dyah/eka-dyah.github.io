@@ -1,4 +1,11 @@
 const listApp =[
+     {
+        "name": "Movie Db (Cinema Db)",
+        "tech": "Javascript, React JS, CSS",
+        "github": "https://github.com/eka-dyah/movieapp",
+        "linkApp": "https://db-cinema.web.app",
+        "img": "./assets/img/cinemadb.jpg"
+    },
     {
         "name": "Memory Game",
         "tech": "Javascript, React JS, CSS",
